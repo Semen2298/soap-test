@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мыло</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container flex">
+            <a href="index.html" class="header__logo">
+                Мыльная гармония
+            </a>
+            <nav class="header__menu">
+                <ul class="header__list flex">
+                    <li class="header__item"><a href="index.html#about">О нас</a></li>
+                    <li class="header__item"><a href="index.html#catalog">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="header__basket_wrapper">
+                <a href="#" class="header__btn">
+                    <span class="counter" id="counter">0</span>
+                </a>
+                <div class="modal" id="cartModal">
+                    <div class="modal-content">
+                        <span class="close" id="closeCartModal">&times;</span>
+                        <h2>Корзина</h2>
+                        <div id="cartItems"></div>
+                        <button id="clearCartButton">Очистить корзину</button>
+                        <button id="checkoutButton">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container flex">
+                <div class="main__offer">
+                    <h1 class="main__offer_title">
+                        Откройте мир натурального мыла
+                    </h1>
+                    <p class="main__offer_desc">
+                        Изготовлено вручную с заботой о вашей коже, наше крафтовое мыло — это идеальный союз природы и комфорта. Наслаждайтесь ароматами и заботой о своем здоровье каждый день!
+                    </p>
+                </div>
+                <div class="main__img">
+                    <img src="img/1.png" alt="main">
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="about__title">
+                    О нас
+                </h2>
+                <div class="about__offer_wrapper">
+                    <div class="about__offer">
+                        <h3 class="about__offer_title">
+                            Наш подход к качеству
+                        </h3>
+                        <p class="about__offer_desc">
+                            Мы верим в натуральное и чистое производство, которое заботится о здоровье вашей кожи. Наши изделия изготавливаются вручную, чтобы обеспечить максимальное удовольствие от контакта с природой.
+                        </p>
+                    </div>
+                    <div class="about__offer_img">
+                        <img src="img/multi-colored-soap.webp" alt="">
+                    </div>
+                </div>
+                
+                <div class="about__offer_wrapper">
+                    <div class="about__offer_img">
+                        <img src="img/multi-colored-soap.webp" alt="">
+                    </div>
+                    <div class="about__offer">
+                        <h3 class="about__offer_title">
+                            Вдохновение в каждом кусочке
+                        </h3>
+                        <p class="about__offer_desc">
+                            Каждое мыло из нашего ассортимента несет в себе неповторимый аромат и нежную текстуру, чтобы сделать вашу рутину особенной и расслабляющей.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <h2 class="catalog__title">Каталог</h2>
+                <div class="catalog__cards">
+
+                </div>
+                <div class="modal" id="productModal">
+                    <div class="modal-content">
+                        <span class="close" id="closeModal">&times;</span>
+                        <img id="modalImage" src="" alt="Изображение товара" class="modal-image">
+                        <h2 id="modalTitle"></h2>
+                        <p id="modalDescription"></p>
+                        <div class="modal-footer">
+                            <div class="quantity">
+                                <label for="quantity">Количество: </label>
+                                <input type="number" id="quantity" value="1" min="1">
+                            </div>
+                            <button class="addToCart" id="addToCart">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+                
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
